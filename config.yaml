@@ -1,0 +1,59 @@
+# ============================================================================
+# Face Detection System — Reference Configuration
+# ============================================================================
+# This file documents ALL configurable parameters with their defaults.
+# The system runs without this file (safe defaults are built-in).
+#
+# Precedence: CLI args > ENV vars > this file > built-in defaults
+# ============================================================================
+
+model:
+  # Path to the SSD prototxt (relative to project root)
+  prototxt_path: "models/deploy.prototxt"
+
+  # Path to the Caffe model weights (relative to project root)
+  weights_path: "models/res10_300x300_ssd_iter_140000.caffemodel"
+
+  # Compute backend: 'cpu' or 'cuda'
+  backend: "cpu"
+
+  # DNN input blob spatial dimensions [width, height]
+  input_size: [300, 300]
+
+  # Per-channel mean subtraction values (BGR order)
+  mean_values: [104.0, 177.0, 123.0]
+
+  # Pixel value scale factor
+  scale_factor: 1.0
+
+detection:
+  # Minimum confidence to accept a detection (0.0–1.0)
+  confidence_threshold: 0.5
+
+  # IoU threshold for non-maximum suppression (0.0–1.0)
+  nms_threshold: 0.3
+
+input:
+  # Input source: file path, directory, video path, or device index
+  source: "0"
+
+  # Optional: downscale input frames to this width (null = no resize)
+  resize_width: null
+
+output:
+  # Output mode(s): 'display', 'save_image', 'save_video', 'save_json', 'save_csv'
+  # Multiple modes can be combined with commas (e.g., "display,save_image,save_json")
+  mode: "display"
+
+  # Directory for output artifacts
+  save_path: "output/"
+
+visualization:
+  # Bounding box color in BGR
+  box_color: [0, 255, 0]
+
+  # Line thickness in pixels
+  thickness: 2
+
+  # Whether to render confidence score labels
+  show_confidence: true
