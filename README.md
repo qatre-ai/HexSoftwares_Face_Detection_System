@@ -1,3 +1,8 @@
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/qatre-ai/face-detection-system)
+![GitHub issues](https://img.shields.io/github/issues/qatre-ai/face-detection-system)
+![GitHub license](https://img.shields.io/github/license/qatre-ai/face-detection-system)
+![Python](https://img.shields.io/badge/python-%3E%3D3.7-blue)
+
 # Face Detection System
 
 A production-grade face detection library using OpenCV's DNN module with SSD-ResNet10. Built for reliability, clean integration, and deployment flexibility.
