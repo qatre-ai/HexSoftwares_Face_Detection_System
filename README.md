@@ -11,7 +11,7 @@ A production-grade face detection library using OpenCV's DNN module with SSD-Res
 
 1. **Clone & Install**
    ```bash
-   git clone https://github.com/qatre-ai/face-detection-system
+   git clone https://github.com/qatre-ai/HexSoftwares_Face_Detection_System
    cd face_detection
    pip install -r requirements.txt
    ```
@@ -51,7 +51,7 @@ This is strictly aligned with OpenCV DNN face detection capabilities.
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/qatre-ai/face-detection-system
+git clone https://github.com/qatre-ai/HexSoftwares_Face_Detection_System
 cd face_detection
 ```
 
